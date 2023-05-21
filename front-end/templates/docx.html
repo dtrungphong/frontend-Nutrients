@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Trang chủ</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="/images/favicon.ico">
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+</head>
+
+<body class="page1" id="top">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="home.html">
+            <img class="imglogo" src="images/logoTLU.png" alt="Logo alt">
+          </a>
+        </h1>  
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="/docx"> Chấm điểm 1 sinh viên </a></li>
+               <li><a href="/zip"> Chấm điểm nhiều sinh viên </a></li>
+             </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+</header>        
+
+<!--=====================
+          Content
+======================-->
+      <section class="upload-tab">
+           <form method="POST" action="/predict" enctype="multipart/form-data">
+      			<h2 class="fontnutri"> Vui lòng đính kèm file gốc </h2>
+				    <input type="file" id="original_file" name="original_file" accept=".doc,.docx">
+				    <h2 class="fontnutri"> Vui lòng đính kèm file bài tập cần chấm điểm </h2>
+				    <input type="file" id="assignment_file" name="assignment_file" accept=".doc,.docx">
+				    <p></p>
+  				  <p>
+  				  	<input type="submit" id="submit_answer" name="submit_answer">
+  				  </p>
+
+			     </form>
+    </section>
+
+</body>
+</html>
+
